@@ -1,6 +1,7 @@
 package com.company;
 
 import java.security.Key;
+import java.util.Random;
 
 public class Main {
 
@@ -29,20 +30,12 @@ public class Main {
         char[] chars = { '!', '*', '№', '$', '%', '&'};
         Keyboard key = new Keyboard();
         key.setLayoutOfKeyboard(chars);
-        key.setBackLight(true);
+        key.setBackLight(false);
         key.setAddKeys(true);
+        
 
+        Computer computer = new Computer(display, "Grey", "Acer", disk, ozu, 12, usb, key);
 
-        Computer comp = new Computer();
-        comp.setDisplayCom(display);
-        comp.setColor("Grey");
-        comp.setBrand("Acer");
-        comp.setHdd(disk);
-        comp.setRam(ozu);
-        comp.setGraphicsCard(12);
-        comp.setUsb(usb);
-        comp.setKeyboard(key);
-
-        comp.MyComputer();
+        computer.MyComputer();
     }
 }
