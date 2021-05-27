@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec8fd77f-2c9f-41fd-b921-4ab2d9352e97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24/com/company/Locality.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24/com/company/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24/com/company/Manchester.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24/com/company/Search.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24/com/company/Toctogul.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ответы.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1t4qBLcOoPGrbtmRXZG1xayu0Ie" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="24" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec8fd77f-2c9f-41fd-b921-4ab2d9352e97" name="Default Changelist" comment="" />
+      <created>1622038572180</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622038572180</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1622068218623">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1622068218623" />
+    <state width="1323" height="319" key="GridCell.Tab.0.bottom" timestamp="1622137462159">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="319" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1622137462159" />
+    <state width="1323" height="319" key="GridCell.Tab.0.center" timestamp="1622137462159">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="319" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1622137462159" />
+    <state width="1323" height="319" key="GridCell.Tab.0.left" timestamp="1622137462159">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="319" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1622137462159" />
+    <state width="1323" height="319" key="GridCell.Tab.0.right" timestamp="1622137462159">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="319" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1622137462159" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1622066409290">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1622066409290" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1622039271981">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1622039271981" />
+  </component>
+</project>
