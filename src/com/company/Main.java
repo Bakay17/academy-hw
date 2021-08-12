@@ -5,6 +5,7 @@ import com.company.dao.impl.CarImpl;
 import com.company.model.Car;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
 
@@ -28,9 +29,15 @@ public class Main {
         }
 
         HashMap<Integer, String> hashMapCar = new HashMap<>();
+        // 1й способ
         for (Car car : cars) {
             hashMapCar.put(car.getId(), car.getCarsName());
         }
         System.out.println(hashMapCar);
+
+        // 2й способ
+        for (Map.Entry entry : hashMapCar.entrySet()) {
+            System.out.println(entry);
+        }
     }
 }
