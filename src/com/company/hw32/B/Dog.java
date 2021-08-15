@@ -1,13 +1,23 @@
 package com.company.hw32.B;
 
 public class Dog {
+    private String name;
     private int age;
 
     public Dog() {
     }
 
-    public Dog(int age) {
+    public Dog(String name, int age) {
+        this.name = name;
         this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {
@@ -16,5 +26,10 @@ public class Dog {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return getName() + " " + getAge();
     }
 }
