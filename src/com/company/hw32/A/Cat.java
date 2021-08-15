@@ -1,25 +1,27 @@
 package com.company.hw32.A;
 
 public class Cat {
-    private String name;
+    private int age;
+
+    public Cat(int age) {
+        this.age = age;
+    }
 
     public Cat() {
     }
 
-    public Cat(String name) {
-        this.name = name;
+    public int getAge() {
+        return age;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     @Override
     public String toString() {
-        return getName();
+        return "Cat{" +
+                "age=" + age +
+                '}';
     }
 }
