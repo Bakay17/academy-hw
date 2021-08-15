@@ -8,15 +8,24 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         Random rnd = new Random();
-        List<Cat> arrayCats = new ArrayList<>(1000000);
+        List<ArrayList<Cat>> arrayCats = new ArrayList<>(1000000);
         List<Cat> linkCats = new LinkedList<>();
+
+        int n = 0;
+        for (int i = 0; i < arrayCats.size(); i++) {
+            n++;
+        }
+        System.out.println(arrayCats);
 
         ArrayList<Cat> cats100 = new ArrayList<>(100);
 
-        for (int i = 0; i < cats100.size(); i++) {
-            cats100.get(i).setAge(rnd.nextInt(20));
-            System.out.println(cats100.toString());
+        arrayCats.add(arrayCats.size()/2, cats100);
+
+        int count = 0;
+        for (int i = 0; i < arrayCats.size(); i++) {
+            count++;
         }
+        System.out.println(arrayCats);
 
 //        for (int i = 0; i < arrayCats.size(); i++) {
 //            arrayCats.add(i);
