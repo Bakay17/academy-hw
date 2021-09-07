@@ -1,0 +1,35 @@
+create table visitors(
+	name varchar(30) unique not null,
+	date varchar(10) not null,
+	sex varchar(10) not null
+)
+
+insert into visitors(name, date, sex)
+values('Samat', '21.05.2000', 'man');
+commit;
+
+insert into visitors(name, date, sex)
+values('Sezim', '17.07.1998', 'woman');
+commit;
+
+insert into visitors(name, date, sex)
+values('Talgat', '12.12.1997', 'man');
+commit;
+
+create table visit(
+	name varchar(20) primary key,
+	time varchar(20),
+	coach varchar(20) unique not null
+);
+
+insert into visit(name, time, coach)
+values('Messi', '24.09.2021', 'Zidane');
+commit;
+
+insert into visit(name, time, coach)
+values('Ranaldo', '27.09.2018', 'Manchini');
+commit;
+
+insert into visit(name, time, coach)
+values('Sane', '14.11.2020', 'Guardiolla');
+commit;
