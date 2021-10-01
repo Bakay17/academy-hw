@@ -1,41 +1,64 @@
-import entity.Championship;
-import entity.Clubs;
-import entity.Country;
-import entity.TypeToSport;
+import entity.Course;
+import entity.Group;
+import entity.Mentor;
+import entity.Student;
 import org.hibernate.Session;
 import util.HibernateUtil;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
 
 public class Application {
 
     public static void main(String[] args) {
+        Course java = Course.builder().id(1L).name("Java").build();
+        Course python = Course.builder().id(2L).name("Python").build();
 
-        TypeToSport football = save(TypeToSport.builder()
-                .id(1L)
-                .name("Football")
-                .build());
+        save(java);
+        save(python);
 
-        Country country = save(Country.builder()
-                .id(1L)
-                .name("Spain")
-                .build());
+        List<Group> groupsJava = Arrays.asList(
+                new Group(1L, "JV-1", java),
+                new Group(2L, "JV-2", java)
+        );
 
-        Clubs club = save(Clubs.builder()
-                .id(1L)
-                .name("Real Madrid")
-                .logo("https://www.realmadrid.com/")
-                .site("https://www.realmadrid.com/")
-                .country(country)
-                .build());
+        for (Group group : groupsJava) {
+            save(group);
+        }
 
-        Championship championship = save(Championship.builder()
-                .id(1L)
-                .name("La Liga")
-                .country(country)
-                .typeToSport(football)
-                .build());
+        List<Group> groupsPython = Arrays.asList(
+                new Group(1L, "PT-1", python),
+                new Group(2L, "PT-2", python)
+        );
 
+        for (Group group : groupsPython) {
+            save(group);
+        }
 
+        Mentor shamil = new Mentor(1L, "Shamil", groupsJava.get(new Random().nextInt(groupsJava.size())));
+        Mentor aidin = new Mentor(2L, "Aidin", groupsJava.get(new Random().nextInt(groupsPython.size())));
+
+        save(shamil);
+        save(aidin);
+
+        List<Student> studentsJava = Arrays.asList(
+                new Student(1L, "Mirlan", java, groupsJava.get(new Random().nextInt(groupsJava.size())), aidin),
+                new Student(2L, "Chyngyz", java, groupsJava.get(new Random().nextInt(groupsJava.size())), shamil),
+                new Student(3L, "Sasha", java, groupsJava.get(new Random().nextInt(groupsJava.size())), aidin),
+                new Student(4L, "Bermet", java, groupsJava.get(new Random().nextInt(groupsJava.size())), shamil),
+                new Student(5L, "Bakai", java, groupsJava.get(new Random().nextInt(groupsJava.size())), aidin),
+                new Student(6L, "Azat", java, groupsJava.get(new Random().nextInt(groupsJava.size())), shamil)
+        );
+
+        for (Student student : studentsJava) {
+            save(student);
+        }
     }
+
+    // Айдин можешь внимательно посмотреть save
+    // в БД почему то не сохраняется
 
     public static <T> T save(T t) {
         Session session = HibernateUtil.getSessionFactory().openSession();
@@ -43,6 +66,7 @@ public class Application {
         session.save(t);
         session.getTransaction().commit();
         session.close();
+        System.out.println("Сохранены данные: " + t);
         return t;
     }
 }
